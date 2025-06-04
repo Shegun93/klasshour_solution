@@ -48,4 +48,12 @@ Klasshour RAGs (Retrieval-Augmented Generation System) is an intelligent learnin
 - Empower students in **Nigeria** and beyond with **24/7 personalized help**
 - Build a scalable system to serve multiple subjects and languages
 
+## 📅 Current Progress
+
+- [x] Initial RAG pipeline prototype
+- [ ] Fine-tuned model integration
+- [ ] Physics content knowledge base
+- [ ] Diagnostic question generation
+- [ ] Frontend integration (UI/UX)
+- [ ] Deployment on Cloud Run / Vertex AI
 
