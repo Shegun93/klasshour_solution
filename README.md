@@ -4,7 +4,10 @@
 
 ## Overview
 
-Klasshour RAGs (Retrieval-Augmented Generation System) is an intelligent learning assistant designed to help students receive **grounded, explainable answers** to their most difficult questions. Built with the needs of students in mind, the system bridges the gap between retrieval and reasoning by providing **context-aware**, **concept-driven**, and **digestible explanations** — not just answers.
+Klasshour RAGs (Retrieval-Augmented Generation System) is an intelligent learning assistant designed to help students receive grounded, explainable answers to their most difficult questions. Built with the needs of students in mind, the system bridges the gap between retrieval and reasoning by providing 
+ - context-aware
+ - concept-driven
+ - digestible explanations — not just answers.
 
 ## 🧩 Key Features
 
