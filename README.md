@@ -22,4 +22,13 @@ Klasshour RAGs (Retrieval-Augmented Generation System) is an intelligent learnin
 4. **The system formats the output** into explainable insights and optionally asks **follow-up diagnostic questions**
 
 ## 📁 Project Structure
-
+```
+.
+├── Dataingestion.py
+├── data.json
+├── Extracted_Text
+├── Extractor.py
+├── Physics
+├── RAGs.ipynb
+└── requirements.txt
+```
