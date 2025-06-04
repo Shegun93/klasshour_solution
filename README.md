@@ -35,13 +35,12 @@ Klasshour RAGs (Retrieval-Augmented Generation System) is an intelligent learnin
 
 ## 🛠 Tech Stack
 
-- **Python 3.10+**
-- **LangChain**
-- **HuggingFace Transformers**
-- **FAISS / Weaviate** (planned vector store)
-- **OpenAI / LLaMA** models
-- **Google Cloud Platform (GCP)** for embeddings and deployment
-- **Streamlit / FastAPI** for UI & APIs (in development)
+- Python 3.9
+- LangChain
+- HuggingFace Transformers
+- Pinecone - Vector Database
+- OpenAI / LLaMA models
+
 
 ## 🎯 Goals
 
