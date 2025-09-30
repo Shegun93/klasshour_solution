@@ -1,4 +1,6 @@
-from langchain.prompts import PromptTemplate
+from langchain.prompts import PromptTemplate, ChatPromptTemplate
+from langchain.output_parsers import StructuredOutputParser, ResponseSchema
+
 class Retrieval:
     def __init__(self, device, index, Embeddings, vector_store):
         self.index = index
@@ -11,9 +13,9 @@ class Retrieval:
             If you cannot answer the question with the context, 
             please respond with 'I don't know':
 
-            Context: {context}
-            Question: {question}
-            """
+        Context: {context}
+        Question: {question}
+        """
         prompt = PromptTemplate.from_template(template)
         retriever = self.vector_store.as_retriever()
         return retriever, prompt
@@ -25,10 +27,3 @@ class Retrieval:
 # docs = retriever.get_relevant_documents("What is Thermodynamics")
 # for i, doc in enumerate(docs):
 #    print(f'\nResult{i}:\n{doc.page_content}')
-
-
-
-
-
-
-

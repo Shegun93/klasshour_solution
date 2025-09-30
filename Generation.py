@@ -2,12 +2,9 @@ from Retrieval import Retrieval
 from langchain_ollama.llms import OllamaLLM
 from langchain_pinecone import PineconeVectorStore
 from dotenv import load_dotenv
-from langchain.output_parsers import ResponseSchema, StructuredOutputParser
 import torch
-from langchain_ollama import OllamaEmbeddings
 from langchain_huggingface import HuggingFaceEmbeddings
 from Pincone import Pincone_vectorStore
-from sentence_transformers import SentenceTransformer
 import warnings
 from operator import itemgetter
 from langchain_core.output_parsers import StrOutputParser
@@ -25,7 +22,6 @@ retrieval_obj = Retrieval(device=Device, index=index,Embeddings=Embeddings,vecto
 retrieval, prompt = retrieval_obj.get_retrieval()
 
 
-parser = StrOutputParser()
 model = OllamaLLM(model="llama2:7b",
                   temperature=0.7)
 chain = (
@@ -35,10 +31,9 @@ chain = (
     }
     | prompt
     | model
+    | StrOutputParser()
 )
 
-
-result = chain.invoke({"question": "What is FUTA curriculum"})
-clean_result = parser.parse(result)
-print(clean_result)
+result=chain.invoke({"question": "What is Temperature"})
+print(result)
 
