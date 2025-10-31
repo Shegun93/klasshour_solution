@@ -5,7 +5,7 @@ from langchain_core.prompts import ChatPromptTemplate, HumanMessagePromptTemplat
 import os
 from datasets import load_dataset, Dataset
 import pandas as pd
-from Retrieval import Retrieval
+from DeepEval.Retrieval import Retrieval
 from tqdm.auto import tqdm
 from operator import itemgetter
 from langchain_core.output_parsers import StrOutputParser
@@ -63,7 +63,7 @@ def Evaluation_Question_Generation(file_path, model, sample_size):
         try:
             question = question_parser.parse(response)
             question["context"] = eval_data
-            question_list.append(question)  # ✅ save result
+            question_list.append(question)
             progress_bar.update(1)
             print(f"Generated Question: {question['question']}")
         except Exception as e:
@@ -71,6 +71,5 @@ def Evaluation_Question_Generation(file_path, model, sample_size):
 
     progress_bar.close()
     return question_list
-
 
 

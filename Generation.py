@@ -1,10 +1,10 @@
-from Retrieval import Retrieval
+from DeepEval.Retrieval import Retrieval
 from langchain_ollama.llms import OllamaLLM
 from langchain_pinecone import PineconeVectorStore
 from dotenv import load_dotenv
 import torch
 from langchain_huggingface import HuggingFaceEmbeddings
-from Pincone import Pincone_vectorStore
+from DeepEval.Pincone import Pincone_vectorStore
 import warnings
 from operator import itemgetter
 from langchain_core.output_parsers import StrOutputParser

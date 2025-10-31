@@ -58,7 +58,6 @@ def Answers_Questions(question_list, model, save_folder):
         })
 
     df = pd.DataFrame(answers)
-    #save_folder = "results"
     os.makedirs(save_folder, exist_ok=True)
     csv_path = os.path.join(save_folder, "qa_results.csv")
     json_path = os.path.join(save_folder, "qa_results.json")
