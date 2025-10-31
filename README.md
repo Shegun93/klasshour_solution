@@ -1,6 +1,6 @@
 # Klasshour RAGs System 
 
-> Note: This project is still a work in progress 
+Note: This project is still a work in progress 
 
 ## Overview
 
